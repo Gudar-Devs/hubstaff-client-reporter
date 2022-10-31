@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class AddVehicleFormField extends StatelessWidget {
-  AddVehicleFormField(
+class AddAccountFormField extends StatelessWidget {
+  AddAccountFormField(
       {Key? key,
       required this.title,
       this.vehicleData,
