@@ -1,7 +1,7 @@
 import 'dart:convert';
 
-class Activity {
-  Activity({
+class TimeActivity {
+  TimeActivity({
     this.id,
     this.date,
     this.createdAt,
@@ -51,11 +51,11 @@ class Activity {
   String? timeType;
   String? client;
 
-  factory Activity.fromJson(String str) => Activity.fromMap(json.decode(str));
+  factory TimeActivity.fromJson(String str) => TimeActivity.fromMap(json.decode(str));
 
   String toJson() => json.encode(toMap());
 
-  factory Activity.fromMap(Map<String, dynamic> json) => Activity(
+  factory TimeActivity.fromMap(Map<String, dynamic> json) => Activity(
         id: json["id"],
         date: json["date"],
         createdAt: json["created_at"],
