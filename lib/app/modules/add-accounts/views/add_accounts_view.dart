@@ -21,7 +21,7 @@ class AddAccountsView extends GetView<AddAccountsController> {
               child: ListView(
                 padding: const EdgeInsets.symmetric(horizontal: 15),
                 children: [
-                  AddVehicleFormField(
+                  AddAccountFormField(
                     obcureText: false,
                     title: 'Personal access token',
                     label: 'AsXDS5d55dsDd32ssdf',
