@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 import '../../../widgets/customCard.dart';
-import '../controllers/accounts_controller.dart';
+import '../controllers/controller.dart';
 
 class AccountsView extends GetView<AccountsController> {
   @override
