@@ -19,7 +19,7 @@ class AccountsView extends GetView<AccountsController> {
         ),
       ),
       appBar: AppBar(
-        backgroundColor: Colors.blueAccent,
+        backgroundColor: Colors.yellow,
         title: Text('Accounts list'),
         centerTitle: true,
       ),
