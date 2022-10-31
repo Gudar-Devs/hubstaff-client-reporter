@@ -7,14 +7,14 @@ void main() {
     'Sum all time entries',
     () {
       List<Activity> timeActivities = [
-        Activity(tracked: 2),
-        Activity(tracked: 11),
-        Activity(tracked: 14),
+        Activity(tracked: 100),
+        Activity(tracked: 200),
+        Activity(tracked: 300),
       ];
 
       int count = sumActivitiesEntries(timeActivities);
 
-      expect(count, 27);
+      expect(count, 600);
     },
   );
 }
