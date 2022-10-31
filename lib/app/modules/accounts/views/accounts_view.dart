@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
+import 'package:hubstaff_client_reporter/app/routes/app_pages.dart';
 
 import '../../../widgets/customCard.dart';
 import '../controllers/controller.dart';
@@ -9,6 +10,14 @@ class AccountsView extends GetView<AccountsController> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      floatingActionButton: InkWell(
+        onTap: () {
+          Navigator.pushNamed(context, Routes.ADD_ACCOUNTS);
+        },
+        child: Center(
+          child: Icon(Icons.add),
+        ),
+      ),
       appBar: AppBar(
         backgroundColor: Colors.blueAccent,
         title: Text('Accounts list'),
