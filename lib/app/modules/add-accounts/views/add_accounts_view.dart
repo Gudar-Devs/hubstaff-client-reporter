@@ -4,6 +4,7 @@ import 'package:get/get.dart';
 import 'package:hubstaff_client_reporter/app/routes/app_pages.dart';
 
 import '../../../widgets/add_account_form_field.dart';
+import '../controllers/controller.dart';
 
 class AddAccountsView extends GetView<AddAccountsController> {
   @override
@@ -14,7 +15,6 @@ class AddAccountsView extends GetView<AddAccountsController> {
         centerTitle: true,
       ),
       body: Form(
-        key: controller.formVehicleController.formCreateVehicle,
         child: Stack(
           children: [
             SafeArea(
@@ -47,23 +47,7 @@ class _SaveButton extends GetView<AddAccountsController> {
 
   @override
   Widget build(BuildContext context) {
-    //final vehicleForm = Provider.of<VehicleFormProvider>(context);
     return Obx(() => GestureDetector(
-          onTap: controller.isLoading.value == false
-              ? () async {
-                  if (controller.formVehicleController
-                      .isValidFormAddVehicle()) {
-                    await controller.addVehicle();
-                    await controller.getVehicle();
-                    controller.isLoading.value == false
-                        ? Get.toNamed(Routes.ACCOUNTS)
-                        : null;
-                  } else {
-                    Get.snackbar(
-                        'Please', 'Shortname and Type Vehicle is required');
-                  }
-                }
-              : () {},
           child: Align(
             alignment: Alignment.bottomCenter,
             child: Container(
@@ -77,14 +61,12 @@ class _SaveButton extends GetView<AddAccountsController> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
-                  controller.isLoading.value == false
-                      ? const Text('SAVE',
-                          textAlign: TextAlign.center,
-                          style: TextStyle(
-                              fontSize: 25,
-                              fontWeight: FontWeight.bold,
-                              color: Colors.black))
-                      : const CircularProgressIndicator()
+                  const Text('SAVE',
+                      textAlign: TextAlign.center,
+                      style: TextStyle(
+                          fontSize: 25,
+                          fontWeight: FontWeight.bold,
+                          color: Colors.black))
                 ],
               ),
             ),
