@@ -8,7 +8,7 @@ class AddAccountFormField extends StatelessWidget {
       required this.label,
       this.mandatory,
       this.initialValue,
-      this.onChanged,
+      this.onChange,
       this.autoValidate,
       this.validator,
       required this.obcureText,
