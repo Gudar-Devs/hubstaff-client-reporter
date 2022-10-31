@@ -1,4 +1,4 @@
-package com.example.hubstaff_client_reporter
+package com.gudardevs.hubstaff_client_reporter
 
 import io.flutter.embedding.android.FlutterActivity
 
