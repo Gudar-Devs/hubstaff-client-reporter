@@ -1,4 +1,4 @@
-class HubStaffCliente {
+class HubStaffClient {
   void login(){
     
   }
