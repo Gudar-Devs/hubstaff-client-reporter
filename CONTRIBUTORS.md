@@ -8,7 +8,7 @@ Ivan Rodriguez ivanrenescorcia@gmail.com
 Alfredo Paez  alfredo.paezn@gmail.com
 Daniel Herrera danielyo1997@hotmail.com
 Ricardo Racines ricardo.racinesb@gmail.com
-
+Eliam Jimenez eliamjimenez00@gmail.com
 <Please be added in alphabetical order>
 
 P.D: Please add yourselves as collaborators in the next Pull Request you make
