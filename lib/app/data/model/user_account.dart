@@ -4,18 +4,18 @@
 
 import 'dart:convert';
 
-class User {
-  User({
+class HubStaffUser {
+  HubStaffUser({
     required this.user,
   });
 
   UserClass user;
 
-  factory User.fromJson(String str) => User.fromMap(json.decode(str));
+  factory HubStaffUser.fromJson(String str) => HubStaffUser.fromMap(json.decode(str));
 
   String toJson() => json.encode(toMap());
 
-  factory User.fromMap(Map<String, dynamic> json) => User(
+  factory HubStaffUser.fromMap(Map<String, dynamic> json) => HubStaffUser(
         user: UserClass.fromMap(json["user"]),
       );
 
