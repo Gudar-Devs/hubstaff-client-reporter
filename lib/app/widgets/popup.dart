@@ -9,7 +9,7 @@ class PopUpDelete extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('delete'),),
+      appBar: AppBar(title: Text('Delete hubstaff member'),),
       body: Center(
         child: TextButton(onPressed: () => Get.defaultDialog(
                 title: "Delete Account",
