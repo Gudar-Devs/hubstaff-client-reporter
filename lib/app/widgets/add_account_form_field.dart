@@ -24,7 +24,7 @@ class AddVehicleFormField extends StatelessWidget {
   bool readOnly;
   AutovalidateMode? autoValidate;
   FormFieldValidator<String>? validator;
-  Function(String)? onChanged;
+  Function(String)? onChange;
 
   @override
   Widget build(BuildContext context) {
@@ -58,7 +58,7 @@ class AddVehicleFormField extends StatelessWidget {
               height: 50,
               width: double.infinity,
               child: TextFormField(
-                onChanged: onChanged,
+                onChanged: onChange,
                 // validator: validateNotEmpty,
                 readOnly: readOnly,
                 initialValue: initialValue,
