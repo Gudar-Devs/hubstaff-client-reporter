@@ -4,6 +4,7 @@ This is a list of our valued CONTRIBUTORS, who with a lot of effort and dedicati
 
 Guzman D. Darío guzman.d.dario@gmail.com
 Diana Hernandez
+Eliam Jimenez eliamjimenez00@gmail.com
 <Please be added in alphabetical order>
 
 P.D: Please add yourselves as collaborators in the next Pull Request you make
